@@ -1,0 +1,35 @@
+*{
+    box-sizing:border-box
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin:0;
+    /*
+    overflow: hidden;  to show scrollbar I removed this property
+    height: 100vh; we use min-height:  here to let h1 show;
+    */
+    min-height: 100vh;
+}
+.title{
+    margin: 10px 0 0;
+    text-align: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;/* so that images will wrap in the end of row and next image start from new row*/
+    max-width: 1000px;
+
+}
+.container img{
+    object-fit: cover;
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+}
